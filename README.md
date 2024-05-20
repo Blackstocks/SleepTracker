@@ -42,14 +42,16 @@ Request:
   "hours": 7,
   "timestamp": 1622019930000
 }
+```
 
 Response:
 ```json
 {
     "message": "Sleep record created successfully"
 }
+```
 
-### GET /sleep:
+### POST /sleep
 
 Response:
 ```json
@@ -103,10 +105,9 @@ Response:
         "__v": 0
     }
 ]
-
-
-   GET /sleep/:userId:
-
+```
+### GET /sleep/:userId:
+```json
    [
     {
         "_id": "664992eb695b0f9656790ebc",
@@ -141,20 +142,18 @@ Response:
         "__v": 0
     }
    ]
-
-    DELETE /sleep/:recordId:
-
+```
+    
+### DELETE /sleep/:recordId:
+```json
     {
     "message": "Record deleted successfully"
     }
+```
 
-6. **Functions** <br>
-    createSleepRecord: Creates a new sleep record.<br>
-    getAllSleepRecords: Retrieves all sleep records.<br>
-    getSleepRecordsByUserId: Retrieves sleep records for a specific user.<br>
-    deleteSleepRecord: Deletes a sleep record by record ID<br>
 
-7. **Testing**
+
+5. **Testing**
     ```bash
     npm test
 
