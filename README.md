@@ -33,7 +33,7 @@ The API is built using Node.js, Express, and Mongoose, ensuring efficient data m
 
 ### API Calls and Test Results
 
-### POST /sleep
+### POST /sleep:
 
 Request:
 ```json
@@ -51,7 +51,7 @@ Response:
 }
 ```
 
-### POST /sleep
+### GET /sleep:
 
 Response:
 ```json
@@ -156,7 +156,3 @@ Response:
 5. **Testing**
     ```bash
     npm test
-
-
-
-  
