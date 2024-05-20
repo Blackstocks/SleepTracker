@@ -19,17 +19,21 @@ jest.mock('mongoose', () => {
   };
 });
 
+// Testing suite for Sleep Record API
 describe('Sleep Record API', () => {
   let server;
 
+  // Before all tests, start the server
   beforeAll((done) => {
     server = app.listen(4000, done);
   });
 
+  // After all tests, close the server
   afterAll((done) => {
     server.close(done);
   });
 
+  // Testing GET /sleep endpoint
   describe('GET /sleep', () => {
     it('should return all sleep records', async () => {
       const mockRecords = [{ userId: 1, hours: 8, timestamp: 1234567890, recordId: 1 }];
@@ -51,6 +55,7 @@ describe('Sleep Record API', () => {
     });
   });
 
+  // Testing POST /sleep endpoint
   describe('POST /sleep', () => {
     it('should create a new sleep record', async () => {
       const sleepRecord = { userId: 1, hours: 7, timestamp: 1234567890 };
@@ -73,6 +78,7 @@ describe('Sleep Record API', () => {
     });
   });
 
+  // Testing GET /sleep/:userId endpoint
   describe('GET /sleep/:userId', () => {
     it('should return sleep records for a user', async () => {
       const userRecords = [
@@ -106,6 +112,7 @@ describe('Sleep Record API', () => {
     });
   });
 
+  // Testing DELETE /sleep/:recordId endpoint
   describe('DELETE /sleep/:recordId', () => {
     it('should delete a sleep record', async () => {
       mongoose.model().findOneAndDelete.mockResolvedValue({ userId: 1, hours: 7, timestamp: 1234567890, recordId: 1 });
