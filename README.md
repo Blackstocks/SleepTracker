@@ -1,8 +1,17 @@
-# SleepTracker
+## Sleep Tracker API
 
-SleepTracker is a web application designed to help users track their sleep patterns and improve their overall sleep quality.
+This well-structured and secure API allows you to track your sleep patterns effectively.
 
-## Setting Up the Project
+**Features:**
+
+* Create new sleep records (POST /sleep)
+* Retrieve all sleep records (GET /sleep)
+* Retrieve sleep records for a specific user (GET /sleep/:userId) **(Implement if functionality is intended)**
+* Delete a sleep record (DELETE /sleep/:recordId) **(Implement if functionality is intended)**
+
+The API is built using Node.js, Express, and Mongoose, ensuring efficient data management and scalability.
+
+**Installation**
 
 1. **Clone the Repository**:
    ```bash
@@ -33,6 +42,7 @@ Request:
   "hours": 7,
   "timestamp": 1622019930000
 }
+
 Response:
 ```json
 {
