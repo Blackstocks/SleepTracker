@@ -30,7 +30,6 @@ The API is built using Node.js, Express, and Mongoose, ensuring efficient data m
     PORT=3000
     MONGODB_URI=your-mongodb-uri
 
-
 ### API Calls and Test Results
 
 ### POST /sleep:
