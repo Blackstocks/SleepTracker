@@ -126,11 +126,11 @@ SleepTracker is a web application designed to help users track their sleep patte
     "message": "Record deleted successfully"
     }
 
-6. **Functions**
-    createSleepRecord: Creates a new sleep record.
-    getAllSleepRecords: Retrieves all sleep records.
-    getSleepRecordsByUserId: Retrieves sleep records for a specific user.
-    deleteSleepRecord: Deletes a sleep record by record ID
+6. **Functions** <br>
+    createSleepRecord: Creates a new sleep record.<br>
+    getAllSleepRecords: Retrieves all sleep records.<br>
+    getSleepRecordsByUserId: Retrieves sleep records for a specific user.<br>
+    deleteSleepRecord: Deletes a sleep record by record ID<br>
 
 7. **Testing**
 npm test
