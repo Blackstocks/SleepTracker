@@ -33,10 +33,17 @@ Request:
   "hours": 7,
   "timestamp": 1622019930000
 }
+Response:
+```json
+{
+    "message": "Sleep record created successfully"
+}
 
+### GET /sleep:
 
-    GET /sleep: 
-    [
+Response:
+```json
+[
     {
         "_id": "6649928c872932119c77e84a",
         "userId": 1,
@@ -85,7 +92,8 @@ Request:
         "recordId": 1716097849058,
         "__v": 0
     }
-   ]
+]
+
 
    GET /sleep/:userId:
 
