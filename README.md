@@ -21,18 +21,19 @@ SleepTracker is a web application designed to help users track their sleep patte
     PORT=3000
     MONGODB_URI=your-mongodb-uri
 
-5. **API Calls and Test Results**
-   POST /sleep:
-   [
-    {
-    "userId": 1,
-    "hours": 7,
-    "timestamp": 1622019930000
-    }
 
-    {
-    "message": "Sleep record created successfully"
-    }
+### API Calls and Test Results
+
+### POST /sleep
+
+Request:
+```json
+{
+  "userId": 1,
+  "hours": 7,
+  "timestamp": 1622019930000
+}
+
 
     GET /sleep: 
     [
@@ -136,7 +137,8 @@ SleepTracker is a web application designed to help users track their sleep patte
     deleteSleepRecord: Deletes a sleep record by record ID<br>
 
 7. **Testing**
-npm test
+    ```bash
+    npm test
 
 
 
