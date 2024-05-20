@@ -9,12 +9,15 @@ SleepTracker is a web application designed to help users track their sleep patte
    git clone https://github.com/your-username/SleepTracker.git
  
 2. **Navigate to Project Directory**
+    ```bash
     cd SleepTracker
 
 3. **Install Dependencies**
+    ```bash
     npm install
 
 4. **Set Up Environment Variables:**
+    ```bash
     PORT=3000
     MONGODB_URI=your-mongodb-uri
 
